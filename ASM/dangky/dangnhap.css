@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(../img/thumb-1920-211271.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(252, 251, 251, 0.3);
+    width: 400px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    margin-bottom: 8px;
+    font-size: 1.8em;
+    color: #e6e3e3;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #f3eeee;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #f8f6f6;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f3eeee;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Phần dành riêng cho đăng ký */
+.register-container {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(252, 251, 251, 0.3);
+    width: 400px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.register-container h2 {
+    margin-bottom: 8px;
+    font-size: 1.8em;
+    color: #e6e3e3;
+}
+
+.register-container p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #f3eeee;
+}
+
+.register-container h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #f8f6f6;
+}
+
+.register-container .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f3eeee;
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+}

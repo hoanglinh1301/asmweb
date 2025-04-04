@@ -1,0 +1,145 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main Navigation */
+.main-nav {
+    background: #000;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu-item {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.menu-link {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover .menu-link {
+    background: #333;
+}
+
+/* Sub Menu */
+.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: white;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    display: none;
+    padding: 20px;
+    z-index: 100;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.menu-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.menu-group {
+    flex: 1;
+    min-width: 0;
+    padding: 0 15px;
+}
+
+.menu-heading {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-list li {
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+
+.menu-list a {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    padding: 5px 0;
+    transition: all 0.2s ease;
+}
+
+.menu-list a:hover {
+    color: #e74c3c;
+    transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .menu-row {
+        flex-wrap: wrap;
+    }
+    
+    .menu-group {
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-menu {
+        flex-direction: column;
+    }
+    
+    .sub-menu {
+        position: static;
+        box-shadow: none;
+        padding: 10px;
+    }
+    
+    .menu-row {
+        flex-direction: column;
+    }
+    
+    .menu-group {
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+    }
+    
+    .menu-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .menu-list li {
+        margin-bottom: 0;
+    }
+}
